@@ -1,0 +1,123 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+/* Banner styling */
+.banner {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Main container for book cards */
+.container {
+  max-width: 1200px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 20px;
+}
+
+/* Book card styling */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Book cover styling */
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Card content styling */
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+#addbutton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+#addbutton:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .banner {
+    font-size: 1.5em;
+  }
+
+  .card img {
+    max-height: 200px;
+  }
+
+  .card-title {
+    font-size: 1em;
+  }
+
+  #addbutton {
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+
+  #addbutton {
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+}

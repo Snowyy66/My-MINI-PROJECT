@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE READERS MAYHEM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <h1 id="heading1">THE READERS MAYHEM</h1>
+    <header>
+      <div class="logo">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/021/162/452/non_2x/simple-book-icon-free-png.png"
+          alt="Ashish Book Store Logo"
+          height="1400"
+          width="80"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" target="_main"><u>Home</u></a>
+          </li>
+          <li>
+            <a href="index4.html" target="_main"><u>Collections</u></a>
+          </li>
+          <li>
+            <a href="index5.html" target="_main"><u>Rare Books</u></a>
+          </li>
+          <li>
+            <a href="index6.html" target="_main"><u>Education</u></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <form
+          action="https://www.google.com/search"
+          method="get"
+          target="_blank"
+        >
+          <input
+            type="text"
+            name="q"
+            placeholder="Search for books, authors......"
+            required
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Discover the New Era of Book Collecting</h1>
+        <p>
+          At Ashish Book Store, we bring you the finest collection of rare and
+          collectible books.
+        </p>
+        <a id="redbutton" href="index3.html" target="_main" class="cta-button"
+          >UPCOMING BOOKS</a
+        >
+      </div>
+    </section>
+    <!-- Featured Books -->
+    <section class="featured-books">
+      <h2>Books Under $10</h2>
+      <div class="book-list">
+        <div class="book-item">
+          <img
+            src="https://imgs.search.brave.com/asS3DJqBl4M--zhUD5lZuN5_7PLx9N_Y8QTqMsR1MCA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzgxUzVVR0IzS2NM/LmpwZw"
+            alt="Book 1"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>FIRE AND BLOOD</b></i>
+          </p>
+          <p>$8.00</p>
+          <button id="addbutton" onclick="addToCart('FIRE AND BLOOD')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="book-item">
+          <img
+            src="https://imgs.search.brave.com/34-ej23gfelW7gyKDjFXfDwmms4IY0jMOT50aoWHE1E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFXSlRTc3FSOUwu/anBn"
+            alt="Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>METAMORPHOSIS</b></i>
+          </p>
+          <p>$9.00</p>
+          <button id="addbutton" onclick="addToCart('METAMORPHOSIS')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="book-item">
+          <img
+            src="https://imgs.search.brave.com/ak-lQI_PrbMG9VYmG_nagBEFhaGTVPHkjsL0VLJFg2I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9vcmlv/bi11cGxvYWRzLm9w/ZW5yb2FkbWVkaWEu/Y29tL21kX2YwYzdi/MTE3MGY5My05Njgu/anBn"
+            alt="Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>DAVINCI CODE</b></i>
+          </p>
+          <p>$6.50</p>
+          <button id="addbutton" onclick="addToCart('DAVINCI CODE')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="book-item">
+          <img
+            src="https://d1pwnu15mzvjms.cloudfront.net/210x320/9781504044486.jpg"
+            alt="Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>DON QUIXOTE</b></i>
+          </p>
+          <p>$9.90</p>
+          <button id="addbutton" onclick="addToCart('DON QUIXOTE')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="book-item">
+          <img
+            src="https://d1pwnu15mzvjms.cloudfront.net/210x320/9781480441187.jpg"
+            alt="Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>TALE OF TWO CITIES</b></i>
+          </p>
+          <p>$9.50</p>
+          <button id="addbutton" onclick="addToCart('A TALE OF TWO CITIES')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="book-item">
+          <img
+            src="https://orion-uploads.openroadmedia.com/sm_f7e651-tolkien-lordoftherings.jpg"
+            alt="Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>LORD OF THE RING</b></i>
+          </p>
+          <p>$8.00</p>
+          <button id="addbutton" onclick="addToCart('LORD OF THE RING')">
+            Add to Cart
+          </button>
+        </div>
+        <!-- Add more book items as necessary -->
+      </div>
+    </section>
+    <section class="featured-books">
+      <h2>Best - seller</h2>
+      <div class="book-list">
+        <div class="book-item">
+          <img
+            src="https://imgs.search.brave.com/iUS6RuQlHdVeYKuVK4aZIEzLxWLO5vQiGIk9W2sqPhU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzYxQUNmckxLMEVM/LmpwZw"
+            alt="Book 1"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>THE GOD OF SMALL THINGS</b></i>
+          </p>
+          <p>$14.00</p>
+          <button id="addbutton" onclick="addToCart('THE GOD OF SAMLL THINGS')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="book-item">
+          <img
+            src="https://imgs.search.brave.com/zGVBEunqYbSIsrOyX-YudLvPQLqCq-epyB5jERUm0ng/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk9UQTVNV0Zo/TXpBdE9XVTFPUzAw/WWprNExUbGtOR0l0/TkdJM04yVmtOemN5/TkdVMlhrRXlYa0Zx/Y0djQC5qcGc"
+            alt="Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>COSMOS</b></i>
+          </p>
+          <p>$9.00</p>
+          <button id="addbutton" onclick="addToCart('COSMOS')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="book-item">
+          <img
+            src="https://imgs.search.brave.com/4Eq6UBUMzAkMBiwWnU7E4sXWB3F50WN52w0idoCo0hs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzkxdnlDTTR5RHZM/LmpwZw"
+            alt="Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>THE DIARY OF ANNE FRANK</b></i>
+          </p>
+          <p>$10.50</p>
+          <button id="addbutton" onclick="addToCart('THE DIARY OF ANNE FRANK')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="book-item">
+          <img
+            src="https://imgs.search.brave.com/xqfMjXSBdPW4uJmp9gVkVkholZvgUJJ8efJLvl_f8qU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzYx/M2I1Y2YxNjc3NTBi/NDJiNDgwZGEyYi9i/MDNjYjViMi04YjBi/LTQxODAtYTM0Ni0z/OWIzOGZlZTY3M2Uv/cmViZWNjYS5qcGVn"
+            alt="Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>REBECCA</b></i>
+          </p>
+          <p>$9.90</p>
+          <button id="addbutton" onclick="addToCart('REBECCA')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="book-item">
+          <img
+            src="https://imgs.search.brave.com/3HWImhwQYcn1j2A2KdClNppWdJWfdq2ZDgjIKjwMDqo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/MzFpWkxOTTIrZUwu/anBn"
+            alt="Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>THE GODFATHER</b></i>
+          </p>
+          <p>$17.50</p>
+          <button id="addbutton" onclick="addToCart('THE GODFATHER')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="book-item">
+          <img
+            src="https://imgs.search.brave.com/pNeUm5oq8YdNOKxD3Pmu8NuXsF5jR1SGtzs9R43XI8U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzgxMSszbFk0YXNM/LmpwZw"
+            alt="Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>JAWS</b></i>
+          </p>
+          <p>$11.07</p>
+          <button id="addbutton" onclick="addToCart('JAWS')">
+            Add to Cart
+          </button>
+        </div>
+        <!-- Add more book items as necessary -->
+      </div>
+    </section>
+
+    <!-- Most Expensive Sales -->
+    <section class="expensive-sales">
+      <h2>Most Expensive Sales from november to february 2025</h2>
+      <div class="expensive-books">
+        <div class="expensive-book">
+          <img
+            src="https://imgs.search.brave.com/1DhZJTbhBYUoeSu1H9BCOwlGkP4DOvyYJMx1-5fAJdg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODFCRTdlZUt6QUwu/anBn"
+            alt="Expensive Book 1"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>RICH DAD POOR DAD</b></i>
+          </p>
+          <p>$17.00</p>
+          <button id="addbutton" onclick="addToCart('RICH DAD POOR DAD')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="expensive-book">
+          <img
+            src="https://imgs.search.brave.com/Jb6my4sVkBmR8oEARzW9n6BWfnbHik8oiaM9agCwMrE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFUOE9YTWlCNUwu/anBn"
+            alt="Expensive Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>IKIGAI</b></i>
+          </p>
+          <p>$16.50</p>
+          <button id="addbutton" onclick="addToCart('IKIGAI')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="expensive-book">
+          <img
+            src="https://imgs.search.brave.com/ZS8qEgZhg5H6rcqGp924Z775w98sLdPvgwy0KfW2hsQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9waWN0/dXJlcy5hYmVib29r/cy5jb20vaXNibi85/Nzg4MTc5OTI1OTEx/LXVzLmpwZw"
+            alt="Expensive Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>THEORY OF EVERYTHING</b></i>
+          </p>
+          <p>$19.00</p>
+          <button id="addbutton" onclick="addToCart('THEORY OF EVERYTHING')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="expensive-book">
+          <img
+            src="https://d1pwnu15mzvjms.cloudfront.net/210x320/9781497679276.jpg"
+            alt="Expensive Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>PINOCCHIO</b></i>
+          </p>
+          <p>$18.00</p>
+          <button id="addbutton" onclick="addToCart('PINOCCHIO')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="expensive-book">
+          <img
+            src="https://orion-uploads.openroadmedia.com/sm_e9852fd441c3-the-little-prince.jpg"
+            alt="Expensive Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>THE LITTLE PRINCE</b></i>
+          </p>
+          <p>$18.60</p>
+          <button id="addbutton" onclick="addToCart('THE LITTLE PRINCE')">
+            Add to Cart
+          </button>
+        </div>
+        <div class="expensive-book">
+          <img
+            src="https://d1pwnu15mzvjms.cloudfront.net/210x320/the-alchemist-38.jpg"
+            alt="Expensive Book 2"
+            height="100"
+            width="100"
+          />
+          <p>
+            <i><b>THE ALCHEMIST</b></i>
+          </p>
+          <p>$19.00</p>
+          <button id="addbutton" onclick="addToCart('THE ALCHEMIST')">
+            Add to Cart
+          </button>
+        </div>
+        <!-- Add more items as necessary -->
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-section">
+        <h4>About THE READERS MAYHEM</h4>
+        <p>
+          We provide a diverse collection of books from rare finds to modern
+          bestsellers. Discover our wide range of books and services.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4>Sell with Us</h4>
+        <p id="lastpara">
+          Join our platform and sell your books to readers across the world.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: contact@thereadersmayhem.com</p>
+        <p>Phone: +91X345YZ6789</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

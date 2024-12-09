@@ -1,0 +1,220 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header Section */
+header {
+    background-color:#780000;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    font-size: 20px;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width: 100%;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url("bookkk.webp");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    padding: 8px 15px;
+    background: linear-gradient(to right,#c11e38,#220b34);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    position: relative;
+    top: 15px;
+    display: inline-block;
+}
+
+/* Featured Books */
+.featured-books, .expensive-sales {
+    padding: 20px;
+    background:linear-gradient(to right, #ffa8bd, #242acf);
+}
+
+.featured-books h2, .expensive-sales h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.book-list, .expensive-books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.book-item, .expensive-book {
+    flex: 1 1 150px;
+    text-align: center;
+}
+
+.book-item img, .expensive-book img {
+    width: 100px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+    }
+
+    .book-list, .expensive-books {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 0.8rem;
+    }
+
+    .book-item, .expensive-book {
+        flex: 1 1 100%;
+    }
+}
+
+/* Specific Element Styles */
+#heading1 {
+    background: linear-gradient(to right, #ffa8bd, #242acf);
+    color:linear-gradient black;
+    font-family: cursive;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+#lastpara {
+    padding-left: 1px;
+}
+
+#addbutton {
+    background-color: grey;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#buttonbeforefooter {
+    background-color: red;
+}

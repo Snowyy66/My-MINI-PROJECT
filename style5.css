@@ -1,0 +1,136 @@
+/* General reset and base styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: linear-gradient(45deg, #ab0468, #ad7d04);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.intro {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures content stays within the card boundaries */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card img {
+    width: 100%; /* Ensures the image width fits the card */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any extra spacing below images */
+    border-bottom: 1px solid #ddd;
+}
+
+.book-card h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #6a11cb;
+}
+
+.book-card p {
+    font-size: 1rem;
+    margin: 0.5rem 1rem;
+    color: #555;
+}
+
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 0;
+}
+#addbutton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  #addbutton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .banner {
+      font-size: 1.5em;
+    }
+  
+    .card img {
+      max-height: 200px;
+    }
+  
+    .card-title {
+      font-size: 1em;
+    }
+  
+    #addbutton {
+      padding: 8px 12px;
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner {
+      font-size: 1.2em;
+      padding: 15px;
+    }
+  
+    .card-content {
+      padding: 10px;
+    }
+  
+    #addbutton {
+      padding: 6px 10px;
+      font-size: 0.8em;
+    }
+  }
